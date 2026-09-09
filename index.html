@@ -65,6 +65,9 @@
       }
       .control-sheet {
         margin-top: 9px;
+        max-height: calc(100dvh - 108px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
         width: 206px;
         padding: 18px 20px;
         border: 1px solid #fff8;
@@ -111,6 +114,15 @@
         font-size: 11px;
         color: #6c7890;
       }
+      .control-sheet label.render-detail {
+        margin: 18px 0 0;
+      }
+      .control-sheet small {
+        display: block;
+        margin-top: 7px;
+        font-size: 11px;
+        color: #6c7890;
+      }
       @media (max-width: 500px) {
         .world-controls {
           top: 12px;
@@ -121,7 +133,7 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="/snow-town-play/assets/index-BCU9nyXZ.js"></script>
+    <script type="module" crossorigin src="/snow-town-play/assets/index-DLTGYBol.js"></script>
   </head>
   <body>
     <canvas
