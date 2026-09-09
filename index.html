@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="theme-color" content="#d5daef" />
+    <link rel="icon" href="data:," />
+    <title>Snow Town</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #d5daef;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        touch-action: none;
+        outline: none;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      .world-controls {
+        position: fixed;
+        right: 18px;
+        top: 18px;
+        z-index: 2;
+        color: #354259;
+        font:
+          12px/1.4 -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        user-select: none;
+      }
+      .world-controls summary {
+        list-style: none;
+        margin-left: auto;
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        border-radius: 50%;
+        background: #f9fafce0;
+        box-shadow: 0 2px 16px #46527612;
+      }
+      .world-controls summary::-webkit-details-marker {
+        display: none;
+      }
+      .world-controls summary:hover {
+        background: #fff;
+      }
+      .world-controls summary:focus-visible {
+        outline: 2px solid #798cad;
+        outline-offset: 3px;
+      }
+      .control-sheet {
+        margin-top: 9px;
+        width: 206px;
+        padding: 18px 20px;
+        border: 1px solid #fff8;
+        border-radius: 15px;
+        background: #f6f7f3ed;
+        box-shadow: 0 8px 36px #34416218;
+        backdrop-filter: blur(16px);
+      }
+      .control-sheet header {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 18px;
+        letter-spacing: 0.03em;
+      }
+      .control-sheet label {
+        display: block;
+        margin: 0 0 18px;
+      }
+      .control-sheet output {
+        float: right;
+        font-size: 11px;
+        color: #6c7890;
+        font-variant-numeric: tabular-nums;
+      }
+      .control-sheet input {
+        display: block;
+        width: 100%;
+        height: 16px;
+        margin: 7px 0 0;
+        accent-color: #738394;
+        cursor: pointer;
+      }
+      .control-sheet fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+      .control-sheet legend {
+        padding: 0;
+        width: 100%;
+      }
+      .control-sheet label.direction {
+        margin: 12px 0 0;
+        font-size: 11px;
+        color: #6c7890;
+      }
+      @media (max-width: 500px) {
+        .world-controls {
+          top: 12px;
+          right: 12px;
+        }
+        .control-sheet {
+          width: 190px;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/snow-town-play/assets/index-C1OBDcDZ.js"></script>
+  </head>
+  <body>
+    <canvas
+      aria-label="A quiet snowy clearing. Move the cursor to wander, or touch and hold to walk."
+      tabindex="0"
+    ></canvas>
+  </body>
+</html>
