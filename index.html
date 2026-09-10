@@ -145,8 +145,29 @@
           width: 190px;
         }
       }
+      .world-entry {position:fixed;inset:0;z-index:10;overflow:auto;display:flex;align-items:flex-start;justify-content:center;background:radial-gradient(ellipse at 25% 20%,#f4f4ef,#d2dce7 70%,#acbdd0);color:#344656;font:14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;padding:24px;box-sizing:border-box}
+      .world-entry-sheet {width:min(360px,100%);padding:28px 0;margin:auto}
+      .entry-eyebrow {font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#627686}
+      .world-entry h1 {font:normal 54px/1.1 Georgia,serif;letter-spacing:-.035em;margin:10px 0}
+      .entry-intro {color:#627686;margin:12px 0 32px}
+      .world-entry label {display:block;font-size:12px;margin:16px 0}
+      .world-entry label[hidden] {display:none}
+      .world-entry input:not([type=range]),.world-entry select {display:block;width:100%;box-sizing:border-box;border:1px solid #91a5b055;background:#ffffff70;color:#344656;font:inherit;padding:11px 12px;border-radius:6px;margin-top:6px}
+      .world-entry input[type=range] {display:block;width:100%;accent-color:#627c88;margin-top:10px}
+      .world-entry output {float:right;color:#758794;font-variant-numeric:tabular-nums}
+      .seed-row {display:flex;gap:10px;align-items:end}.seed-row label {flex:1;margin:0 0 16px}
+      .world-entry button {cursor:pointer;font:inherit;border:0;border-radius:6px}
+      .seed-shuffle {padding:9px 15px;background:#ffffff70;color:#506577;font-size:22px!important;margin-bottom:16px}
+      .landscape-tuning summary {cursor:pointer;font-size:12px;padding:6px 0;color:#526b7b}
+      .enter-world {width:100%;background:#344f60;color:#fafcfd;padding:14px;margin:24px 0 0}
+      .enter-world:hover {background:#263f50}.world-entry :focus-visible {outline:2px solid #536e89;outline-offset:3px}
+      .entry-footnote {font-size:11px;color:#667e8e;text-align:center;margin-top:16px}
+      .generation-status progress {width:100%;height:4px;accent-color:#526b7b}
+      .generation-status p {font-size:13px;color:#526b7b;margin-top:30px}
+      .generating label,.generating .seed-row,.generating .landscape-tuning,.generating .enter-world,.generating .entry-footnote {display:none}
+      @media(prefers-reduced-motion:no-preference){.generation-status {animation:arrival .7s ease-out}@keyframes arrival{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}}
     </style>
-    <script type="module" crossorigin src="/snow-town-play/assets/index-Cycpe83Y.js"></script>
+    <script type="module" crossorigin src="/snow-town-play/assets/index-Dh2H5DyT.js"></script>
   </head>
   <body>
     <canvas
